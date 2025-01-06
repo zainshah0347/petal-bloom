@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Header from '../Header/header';
 import BasicRating from './rating';
 import { ProductData } from '@/db/database';
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+
 
 export default function HeroSection() {
     return (
@@ -44,7 +46,7 @@ export default function HeroSection() {
                             <div className="flex items-center gap-4">
                                 <Image
                                     src="/images/account.jpg"
-                                    className="rounded-full"
+                                    className="rounded-full object-cover w-16 h-16"
                                     alt="account"
                                     width={64}
                                     height={64}
@@ -138,7 +140,7 @@ function TrendyPlantsSection({ title }: Title) {
                                         Explore
                                     </button>
                                     <button className="border-2 border-white text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black transition-all">
-                                        🛒
+                                        <LocalMallOutlinedIcon/>
                                     </button>
                                 </div>
                             </div>

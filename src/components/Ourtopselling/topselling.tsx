@@ -102,12 +102,11 @@ export default function OurTopSelling() {
                             >
                                 <div className="flex items-center gap-4">
                                     <Image
-
                                         src={accountImg}
-                                        className="rounded-[100%]"
+                                        className="rounded-full object-cover w-16 h-16" // Ensures the image is circular
                                         alt="account"
-                                        width={64}
-                                        height={64}
+                                        width={72}
+                                        height={72}
                                     />
                                     <div>
                                         <p className="text-[18px] text-white">{accountName}</p>
@@ -120,6 +119,7 @@ export default function OurTopSelling() {
                                     {description3}
                                 </p>
                             </div>
+
                         );
                     })}
                 </div>

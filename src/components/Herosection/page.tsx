@@ -133,7 +133,7 @@ function TrendyPlantsSection({ title }: Title) {
                                     {item.productDescription1}
                                 </p>
                                 <h3 className="text-white text-[20px] lg:text-[24px] font-bold mt-2">
-                                    Rs. {item.price}/-
+                                    Rs. {item.price}
                                 </h3>
                                 <div className="flex justify-center lg:justify-start gap-4 mt-4">
                                     <button className="border-2 border-white text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black transition-all">
